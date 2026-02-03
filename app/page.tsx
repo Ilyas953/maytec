@@ -1,46 +1,19 @@
+import { Hero, Description } from "./components";
+import type { Metadata } from "next";
 
-
-import Image from "next/image";
-import { Header, Hero, Description } from "./components";
-
-export const metaBatLeVaudreuil = {
-  title: "Électricien en Normandie et Sarthes | Maytec",
-  description: "Maytec, votre électricien agricole et bâtiment en Normandie et Sarthe. Cliquez pour accéder à nos services spécialisés et obtenir un devis rapide.",
-  robots: "index, follow",
-  canonical: "https://www.may-tec.net/",
-  openGraph: {
-    title: "Électricien en Normandie et Sarthes | Maytec",
-    description: "Maytec, votre électricien agricole et bâtiment en Normandie et Sarthe. Cliquez pour accéder à nos services spécialisés et obtenir un devis rapide.",
-    url: "https://www.may-tec.net/",
-    site_name: "Maytec",
-    type: "website",
-    images: [
-      { url: "/LOGOMAYTEC.png", width: 1200, height: 630, alt: "Électricien bâtiment Le Vaudreuil | Maytec" },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    site: "@Maytec",
-    title: "Électricien en Normandie et Sarthes | Maytec",
-    description: "Maytec, votre électricien agricole et bâtiment en Normandie et Sarthe. Cliquez pour accéder à nos services spécialisés et obtenir un devis rapide.",
-    image: "/LOGOMAYTEC.png",
-  },
-};
-
-
-/* export const metadata = {
+export const metadata: Metadata = {
   title: "Électricien en Normandie et Sarthe | Maytec",
   description: "Maytec, votre électricien agricole et bâtiment en Normandie et Sarthe. Cliquez pour accéder à nos services spécialisés et obtenir un devis rapide.",
   robots: "index, follow",
   openGraph: {
     title: "Électricien en Normandie et Sarthe | Maytec",
     description: "Maytec, votre électricien agricole et bâtiment en Normandie et Sarthe. Installation, rénovation et maintenance pour professionnels et particuliers.",
-    url: "https://www.monsite.com",
+    url: "https://www.may-tec.net",
     siteName: "Maytec",
     type: "website",
     images: [
       {
-        url: "https://www.monsite.com/og-image.jpg",
+        url: "/LOGOMAYTEC.png",
         width: 1200,
         height: 630,
         alt: "Électricien Maytec"
@@ -51,10 +24,9 @@ export const metaBatLeVaudreuil = {
     card: "summary_large_image",
     title: "Électricien en Normandie et Sarthe | Maytec",
     description: "Maytec, votre électricien agricole et bâtiment en Normandie et Sarthe. Installation, rénovation et maintenance.",
-    images: ["https://www.monsite.com/og-image.jpg"]
+    images: ["/LOGOMAYTEC.png"]
   }
 };
-*/
 
 
 export default function Home() {

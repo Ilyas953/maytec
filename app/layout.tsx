@@ -18,14 +18,14 @@ export  function Schema() {
           "logo": "/LOGOMAYTEC.png",
           "image": "/LOGOMAYTEC.png",
           "description": "Électricien spécialisé en bâtiment et agricole en Normandie, fournissant des installations électriques sûres et conformes.",
-          "telephone": {numero},
-          "email": {mail},
+          "telephone": numero,
+          "email": mail,
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "12 Rue de l&apos;Électricité",
-            "addressLocality": "Le Vaudreuil",
-            "addressRegion": "Normandie",
-            "postalCode": "27100",
+            "streetAddress": adresse.streetAddress,
+            "addressLocality": adresse.addressLocality,
+            "addressRegion": adresse.addressRegion,
+            "postalCode": adresse.postalCode,
             "addressCountry": "FR"
           },
           "areaServed": [
@@ -90,13 +90,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <head>
-        <Schema />
-      </head>
+      <head></head>
       <body
         className={`${inter}  antialiased text-white overflow-x-hidden `}
       >
-        
+        <Schema />
         {children}
         <Footer />
       </body>
