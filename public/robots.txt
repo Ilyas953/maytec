@@ -1,0 +1,9 @@
+# robots.txt for Maytec
+# Allow all crawlers except API routes, and point to the sitemap.
+
+User-agent: *
+Disallow: /api/
+Allow: /
+
+# Replace https://www.may-tec.net with your production domain
+Sitemap: https://www.may-tec.net/sitemap.xml

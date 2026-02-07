@@ -120,7 +120,7 @@ export const certifbat4 = [
   {
     name: "Service réactif",
     icon: "mdi:alarm-light",
-    text: "Interventions rapides sur site en cas d&apos;urgence ou de dépannage.",
+    text: "Interventions rapides sur site en cas d'urgence ou de dépannage.",
   },
   {
     name: "Accompagnement personnalisé",
@@ -207,12 +207,12 @@ export const certifagr3 = [
   {
     name: "Optimisation des coûts",
     icon: "mdi:cash-multiple",
-    text: "Équipements efficaces pour limiter la consommation d&apos;énergie.",
+    text: "Équipements efficaces pour limiter la consommation d'énergie.",
   },
   {
     name: "Conseils techniques",
     icon: "mdi:brain",
-    text: "Guidance experte pour l&apos;amélioration et la sécurité des installations.",
+    text: "Guidance experte pour l'amélioration et la sécurité des installations.",
   },
 ];
 
@@ -230,7 +230,7 @@ export const certifagr4 = [
   {
     name: "Solutions durables",
     icon: "mdi:recycle",
-    text: "Matériels durables pour une exploitation efficace et respectueuse de l&apos;environnement.",
+    text: "Matériels durables pour une exploitation efficace et respectueuse de l'environnement.",
   },
   {
     name: "Accompagnement complet",
@@ -238,7 +238,7 @@ export const certifagr4 = [
     text: "Du projet initial à la maintenance, nous restons à vos côtés.",
   },
   {
-    name: "Rapidité d&apos;intervention",
+    name: "Rapidité d'intervention",
     icon: "mdi:timer-sand",
     text: "Interventions rapides même dans les zones rurales les plus isolées.",
   },
@@ -510,7 +510,7 @@ className=" col-span-full lg:mx-auto mt-20 lg:row-start-6  lg:mt-0 text-center  
 export function Hero2({titreh1, soustitrehero}: titreprops) {
     return (
         <>
-        <header className="h-screen grid grid-cols-12 lg:grid-rows-12 w-full px-[32px]  ">
+        <header className="h-auto lg:h-screen grid grid-cols-12 lg:grid-rows-12 w-full px-[32px]  ">
             
       <Image
         src="/panneauelec.jpeg"
@@ -528,7 +528,7 @@ export function Hero2({titreh1, soustitrehero}: titreprops) {
     transition={{ duration: 0.5 }}
     viewport={{ once: true }}
 
-    className="row-start-1 lg:row-start-6 col-span-full w-full justify-center items-center flex flex-col gap-[48px]  z-20">
+    className="row-start-1 lg:row-start-6 col-span-full w-full justify-center items-center flex flex-col gap-[48px] py-[100px] lg:py-[32px] z-20">
                 <div className="flex flex-col gap-[16px] lg:max-w-7xl">
             <h1 className="   text-[32px] lg:text-[48px] font-extrabold text-center justify-center">{titreh1}</h1>
             <p className="text-[24px] text-[#E6E6E6] font-semibold text-center">{soustitrehero}</p>
@@ -549,7 +549,7 @@ export function Hero2({titreh1, soustitrehero}: titreprops) {
         </header>
         
         </>
-    )
+    )  
 }
 
 export function Description({titre, texte}: titreprops) { return (

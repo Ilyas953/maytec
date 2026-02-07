@@ -27,7 +27,7 @@ export default function Page() {
       <Certif titreh2="Nos avantages pour vos installations" service={certifbat} secondtitre="Notre savoir-faire en électricité agricole assure la conformité de vos équipements et la protection de vos exploitations, avec des interventions rapides et adaptées à vos besoins spécifiques." />
   
   
-      <Zone titreh2="Où opérons-nous ?" texte="Dans la Sarthe, nous couvrons toutes les zones d&apos;intervention agricole, des grandes exploitations aux petits sites isolés. Nos électriciens spécialisés garantissent des installations fiables, conformes et performantes, tout en intervenant rapidement pour résoudre vos problèmes électriques et assurer la continuité de vos activités agricoles." />
+      <Zone titreh2="Où opérons-nous ?" texte="Dans la Sarthe, nous couvrons toutes les zones d'intervention agricole, des grandes exploitations aux petits sites isolés. Nos électriciens spécialisés garantissent des installations fiables, conformes et performantes, tout en intervenant rapidement pour résoudre vos problèmes électriques et assurer la continuité de vos activités agricoles." />
   
   
       <Contact titreh2="Une urgence électrique ? Nous sommes là pour vous !" soustitrehero="Remplissez le formulaire ou téléphonez, nous planifions votre intervention sans attendre." />

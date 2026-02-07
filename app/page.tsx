@@ -39,7 +39,7 @@ export default function Home() {
     
     " texte="
 
-    Nous sommes Maytec, électricien agricole et du bâtiment. Notre entreprise accompagne les professionnels et particuliers pour tous leurs travaux d&apos;électricité en bâtiment et en milieu agricole. Nous réalisons l&apos;installation, la rénovation et la maintenance de vos systèmes électriques, dans le respect des normes en vigueur. Présents en Normandie et en Sarthe, nous intervenons rapidement surtout pour les dépannages urgents pour sécuriser vos installations et optimiser leurs performances. Grâce à notre expertise terrain et à notre approche personnalisée, chaque projet bénéficie d&apos;un suivi sérieux et transparent, du devis à la livraison finale
+    Nous sommes Maytec, électricien agricole et du bâtiment. Notre entreprise accompagne les professionnels et particuliers pour tous leurs travaux d'électricité en bâtiment et en milieu agricole. Nous réalisons l'installation, la rénovation et la maintenance de vos systèmes électriques, dans le respect des normes en vigueur. Présents en Normandie et en Sarthe, nous intervenons rapidement surtout pour les dépannages urgents pour sécuriser vos installations et optimiser leurs performances. Grâce à notre expertise terrain et à notre approche personnalisée, chaque projet bénéficie d'un suivi sérieux et transparent, du devis à la livraison finale
 
     
     " />
