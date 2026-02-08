@@ -4,6 +4,29 @@ import "./globals.css";
 import {Footer, Header, mail, numero, adresse} from "./components";
 import Script from "next/script";
 
+export const metadata: Metadata = {
+  title: "Maytec - Électricien bâtiment et agricole",
+  description: "Électricien spécialisé en bâtiment et agricole en Normandie, fournissant des installations électriques sûres et conformes.",
+  icons: {
+    icon: "/favicon.ico",
+  },
+  openGraph: {
+    title: "Maytec - Électricien bâtiment et agricole",
+    description: "Électricien spécialisé en bâtiment et agricole en Normandie",
+    url: "https://www.may-tec.net",
+    siteName: "Maytec",
+    images: [
+      {
+        url: "/LOGOMAYTEC.png",
+        width: 1200,
+        height: 630,
+        alt: "Maytec - Électricien",
+      },
+    ],
+    type: "website",
+  },
+};
+
 export  function Schema() {
   return (
     <Script
