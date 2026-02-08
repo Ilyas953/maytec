@@ -2,10 +2,29 @@
 import { Bouton } from "./components"
 import { Icon } from "@iconify/react";
 import { Resend } from "resend";
+import { usePathname } from "next/navigation";
 import { FormEvent, useState } from "react";
 
 
 export function ContactForm() {
+
+  const pathname = usePathname();
+
+  const formatPageLabel = (p: string | null | undefined) => {
+    if (!p) return "non précisée";
+    const map: Record<string, string> = {
+      '/electricien-agricole-le-mans': 'Agricole Le Mans',
+      '/electricien-agricole-le-vaudreuil': 'Agricole Le Vaudreuil',
+      '/electricien-agricole-normandie': 'Agricole Normandie',
+      '/electricien-agricole-sarthes': 'Agricole Sarthes',
+      '/electricien-batiment-le-mans': 'Bâtiment Le Mans',
+      '/electricien-batiment-le-vaudreuil': 'Bâtiment Le Vaudreuil',
+      '/electricien-batiment-normandie': 'Bâtiment Normandie',
+      '/electricien-batiment-sarthes': 'Bâtiment Sarthes',
+    };
+    if (map[p]) return map[p];
+    return p.replace(/^\//, '').replace(/-/g, ' ');
+  };
 
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
@@ -14,7 +33,7 @@ export function ContactForm() {
     "flex flex-col lg:flex-row gap-[10px] border border-white w-full px-6 py-[15px] text-[20px] font-semibold justify-center items-center rounded-[12px]  pl-14";
 
  
- const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
   
   const form = e.currentTarget;
@@ -25,6 +44,7 @@ export function ContactForm() {
     email: formData.get("email"),
     telephone: formData.get("telephone"),
     message: formData.get("message"),
+    page: formatPageLabel(pathname),
   };
 
   try {
