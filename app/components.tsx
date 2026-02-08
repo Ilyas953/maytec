@@ -528,7 +528,7 @@ export function Hero2({titreh1, soustitrehero}: titreprops) {
     transition={{ duration: 0.5 }}
     viewport={{ once: true }}
 
-    className="row-start-1 lg:row-start-6 col-span-full w-full justify-center items-center flex flex-col gap-[48px] py-[100px] lg:py-[32px] z-20">
+    className="row-start-1 lg:row-start-6 col-span-full w-full justify-center items-center flex flex-col gap-[48px] py-[124px] lg:py-[32px] z-20">
                 <div className="flex flex-col gap-[16px] lg:max-w-7xl">
             <h1 className="   text-[32px] lg:text-[48px] font-extrabold text-center justify-center">{titreh1}</h1>
             <p className="text-[24px] text-[#E6E6E6] font-semibold text-center">{soustitrehero}</p>
