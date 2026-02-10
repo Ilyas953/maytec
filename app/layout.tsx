@@ -113,7 +113,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <head></head>
+      <head>
+        <meta name="google-site-verification" content="4ZuJ6dKcv2aPZIJ8retffSM4QymqDhjbPebRJ8TQss8" />
+      </head>
       <body
         className={`${inter}  antialiased text-white overflow-x-hidden `}
       >
