@@ -6,6 +6,7 @@ import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Maytec - Électricien bâtiment et agricole",
+  metadataBase: new URL("https://www.may-tec.net"),
   description: "Électricien spécialisé en bâtiment et agricole en Normandie, fournissant des installations électriques sûres et conformes.",
   icons: {
     icon: "/favicon.ico",
@@ -24,6 +25,7 @@ export const metadata: Metadata = {
       },
     ],
     type: "website",
+    
   },
 };
 
