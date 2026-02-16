@@ -117,6 +117,7 @@ export default function RootLayout({
     <html lang="fr">
       <head>
         <meta name="google-site-verification" content="4ZuJ6dKcv2aPZIJ8retffSM4QymqDhjbPebRJ8TQss8" />
+        <link rel="canonical" href="https://www.may-tec.net" />
       </head>
       <body
         className={`${inter}  antialiased text-white overflow-x-hidden `}
