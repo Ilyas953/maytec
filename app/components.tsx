@@ -463,7 +463,7 @@ export function Hero({titreh1, soustitrehero}: titreprops) {
     viewport={{ once: true }}
 
 
-className=" text-black col-span-full lg:mx-auto mt-20 lg:row-start-6  lg:mt-0 text-center  w-full justify-center items-center flex flex-col gap-[48px]  z-20">
+className=" text-white col-span-full lg:mx-auto mt-20 lg:row-start-6  lg:mt-0 text-center  w-full justify-center items-center flex flex-col gap-[48px]  z-20">
                 <div className="flex flex-col gap-[16px]">
                 <h1 className="   text-[32px] lg:text-[48px] font-extrabold text-center justify-center">{titreh1}</h1>
             <p className="text-[24px] text-[#E6E6E6] font-semibold text-center">{soustitrehero}</p>
